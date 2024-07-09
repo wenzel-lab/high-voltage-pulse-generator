@@ -4,6 +4,11 @@ This is our Open Source Hardware, custom electronics solution for microfluidic d
 
 The printed circuit board (PCB) design is inspired by the electronics desin in the supplementary material of the publication "Sequentially addressable dielectrophoretic array for high-throughput sorting of large-volume biological compartments" https://www.science.org/doi/10.1126/sciadv.aba6712 and we exchanged messages with the authors in perparation for the resedign with logic and electroncis that were more accessible to us (to date, at low volumes, and outside Japan).
 
+Preliminary image of the bard
+<p align="left">
+<img src="./images/PCBmodel.jpg" width="400">
+</p>
+
 Follow us! [#twitter](https://twitter.com/WenzelLab), [#YouTube](https://www.youtube.com/@librehub), [#LinkedIn](https://www.linkedin.com/company/92802424), [#instagram](https://www.instagram.com/wenzellab/), [#Printables](https://www.printables.com/@WenzelLab), [#LIBREhub website](https://librehub.github.io), [#IIBM website](https://ingenieriabiologicaymedica.uc.cl/en/people/faculty/821-tobias-wenzel)
 
 ## Contribute
