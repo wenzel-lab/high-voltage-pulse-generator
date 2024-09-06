@@ -22,4 +22,4 @@ documentation. More detailed documentation is available on the
 
 ## Access the Documentation
 
-The updated documentation for this project can be accessed directly [here](https://github.com/wenzel-lab/high-voltage-pulse-generator/blob/master/docs/mouser_cart_components.xls).
+The updated documentation for this project can be accessed directly [here](https://fcomc7.github.io/high-voltage-pulse-generator/).
