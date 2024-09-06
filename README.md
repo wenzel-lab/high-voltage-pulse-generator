@@ -5,7 +5,7 @@
 GitBuilding is an OpenSource project for documenting hardware projects with minimal
 effort, so you can stop writing and GitBuilding. GitBuilding is a python program that
 works on Windows, Linux, and MacOS. More information on the GitBuilding project, or how
-to install GitBuilding please see the [GitBuilding website](http://gitbuilding.io)
+to install GitBuilding please see the [GitBuilding website](http://gitbuilding.io).
 
 ## How do I edit the documentation?
 
@@ -19,3 +19,7 @@ notice that the files you are editing are markdown files. GitBuilding uses an ex
 markdown syntax (that we call BuildUp). This allows you to keep track of parts in the
 documentation. More detailed documentation is available on the
 [GitBuilding website](https://gitbuilding.io).
+
+## Access the Documentation
+
+The updated documentation for this project can be accessed directly [here](https://github.com/wenzel-lab/high-voltage-pulse-generator/blob/master/docs/mouser_cart_components.xls).
