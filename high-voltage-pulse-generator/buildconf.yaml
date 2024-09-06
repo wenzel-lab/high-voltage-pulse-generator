@@ -5,7 +5,7 @@ Authors:
 Email: librehub@uc.cl
 HoverColor: '#555555'
 LandingPage: index.md
-License: MIT
+License: CERN-OHL-W-2.0
 Navigation:
   - Link: testpage1.md
     SubNavigation:
@@ -31,7 +31,6 @@ Navigation:
         Title: PWM signals
     Title: Code C++
   - Link: user_interface.md
-    Title: User Interface
     SubNavigation:
       - Link: python.md
         Title: Python Code
@@ -39,5 +38,6 @@ Navigation:
         Title: Master ESP32
       - Link: slave.md
         Title: Slave ESP32
+    Title: User Interface
 PrimaryColor: '#f1502f'
 SecondaryColor: '#cccccc'
