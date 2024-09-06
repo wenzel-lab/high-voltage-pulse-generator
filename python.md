@@ -93,10 +93,11 @@ If you prefer, you can convert the Notebook to a Python file and then create an 
 >!!
 >!! The amplitude value must be between **0 and 255**. If you define a value outside this range you will not be able to send the data. If you need operate a lower frequencies, you could modify the LC filter. Please check this section, [6. High Frequency Transformer](schematic2.md).
 
-2. **Frequency Adjustment**: Enter the desired frequency value in the frequency input field. If you are using the inverter without an LC filter then it is recommended to operate in a range between **80-100KHz**. Because for frequencies between 50-77KHz the maximum voltage is significantly attenuated in addition to distorting the signal as you can see in the images below. In case you add an LC filter to the output of the inverter, then it works correctly at a frequency of 60 ± 5 KHz as shown previously. 
+2. **Frequency Adjustment**: Enter the desired frequency value in the frequency input field. If you are using the inverter without an LC filter then it is recommended to operate in a range between **80-100KHz**. Because for frequencies between 50-77KHz the maximum voltage is significantly attenuated in addition to distorting the signal as you can see in the images below. In case you add an **LC filter ( L= 6.1uH, C=500nF)** to the output of the inverter, then it works correctly at a frequency of 60 ± 5 KHz as shown previously.
 
 ![](images/freqvsamplitude.png)
 ![](images/tablafreq1.png)
+![](images/lcfilter.jpeg)
 
 | [![](images/70khz.png)](images/70khz.png) | [![](images/100khz.png)](images/100khz.png) |
 |:-------------------------------:|:--------------------------:|
