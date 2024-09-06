@@ -1,0 +1,43 @@
+Affiliation: Latin American Hub for Bioimaging Through Open Hardware (LIBRE hub)
+Authors:
+  - Francisco Martínez
+  - Tobías Wenzel
+Email: librehub@uc.cl
+HoverColor: '#555555'
+LandingPage: index.md
+License: MIT
+Navigation:
+  - Link: testpage1.md
+    SubNavigation:
+      - Link: Schematic.md
+        Title: Schematic of Circuit
+      - Link: Layout.md
+        Title: Layout of Circuit
+      - Link: Datasheet.md
+        Title: Assembly PCB
+    Title: Full bridge single-phase inverter
+  - Link: testpage5.md
+    SubNavigation:
+      - Link: schematic2.md
+        Title: 'General Schematic '
+      - Link: assembly2.md
+        Title: HVPG Assembly
+    Title: Control PCB
+  - Link: widget.md
+    SubNavigation:
+      - Link: potentiometer.md
+        Title: Digital Potentiometer
+      - Link: pwm.md
+        Title: PWM signals
+    Title: Code C++
+  - Link: user_interface.md
+    Title: User Interface
+    SubNavigation:
+      - Link: python.md
+        Title: Python Code
+      - Link: master.md
+        Title: Master ESP32
+      - Link: slave.md
+        Title: Slave ESP32
+PrimaryColor: '#f1502f'
+SecondaryColor: '#cccccc'
