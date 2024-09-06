@@ -1,0 +1,7 @@
+# Ignorar archivos generados
+_build/
+_site/
+
+
+
+
