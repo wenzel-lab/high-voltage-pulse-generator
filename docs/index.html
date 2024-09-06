@@ -1,121 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Multi Channel High Voltage Pulse Generator Board</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="./images/favicon.ico" />
-    <link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="./images/favicon-16x16.png" sizes="16x16" />
-    <link href="./static/base-style.css" rel="stylesheet">
-    <link href="./static/site-style.css" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #f1502f;
-            --secondary-color: #cccccc;
-            --hover-color: #555555;
-        }
-    </style>
-    <script type="text/javascript" src="./static/search.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a CSS si es necesario -->
 </head>
 <body>
-<header class="site-header">
-    <div class="wrapper header-wrapper">
-        <div class="header-text">
-            <h1 class="site-title">Multi Channel High Voltage Pulse Generator Board</h1>
-            <p class="author">by Francisco Martínez and Tobías Wenzel</p>
-            <p class="affiliation">Latin American Hub for Bioimaging Through Open Hardware (LIBRE hub)</p>
-        </div>
-    </div>
-</header>
-<div class="page-content">
-    <div>
-        <nav class="sidebar">
-            <a href="#" class="menu-icon">
-                <svg viewBox="0 0 18 15">
-                    <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-                    <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-                    <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-                </svg>
-            </a>
-            <ul class="nav-list">
-                <li>
-                    <a class="navhome" href="./index.html">
-                        Multi Channel High Voltage Pulse Generator Board
-                    </a>
-                </li>
-                <li id="nav-search" :class="focused && searchTerm.length > 0 ? 'search-result-popout' : 'search'" v-scope v-on:vue:mounted="mounted('./')">
-                    <input
-                        type="text"
-                        placeholder="Search..."
-                        v-on:input="search($event.target.value)"
-                        v-on:keypress="handleKeyPress"
-                        v-on:keyup.esc="$event.target.blur()"
-                        v-on:focus="handleFocus"
-                        v-on:blur="handleBlur"
-                        :value="searchTerm" />
-                    <div class="search-results" v-if="focused && searchTerm.length > 0">
-                        <div v-if="searchResults.length > 0">Results:</div>
-                        <div v-if="searchResults.length === 0">No results.</div>
-                        <template v-for="(result, index) in searchResults">
-                            <li>
-                                <a class="search-result" :href="`./${result.path}.html`">
-                                    <span v-for="crumb in result.breadCrumbs.slice(0, -1)">
-                                        ${crumb + ' > '}
-                                    </span>
-                                    ${result.title || result.breadCrumbs[result.breadCrumbs.length - 1]}
-                                    <p>
-                                        <span v-for="node in result.highlightChars" :class="node.mark ? 'highlight' : ''">${node.chars}</span>
-                                    </p>
-                                </a>
-                            </li>
-                        </template>
-                    </div>
-                </li>
-                <li class="not-active">
-                    <a class="not-active" href="./testpage1.html">
-                        Full bridge single-phase inverter
-                    </a>
-                </li>
-                <li class="not-active">
-                    <a class="not-active" href="./testpage5.html">
-                        Control PCB
-                    </a>
-                </li>
-                <li class="not-active">
-                    <a class="not-active" href="./widget.html">
-                        Code C++
-                    </a>
-                </li>
-                <li class="not-active">
-                    <a class="not-active" href="./user_interface.html">
-                        User Interface
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="wrapper">
-        <p>This is our open-source hardware and custom electronics solution for microfluidic droplet sorting pulses. It is used as part of "Ritmos,” our Real-time Technology for Microfluidic Droplet Sorting, as well as other microfluidics development projects. We implemented a board that features six HV pulse generator and amplification channels for the possibility of multi-electrode sorting of large droplets or multi-way sorting applications; however, it is possible to use only one channel for traditional sorting. The board is designed around an ESP32 microcontroller which controls the pulse duration, frequency, final amplitude (by regulating the input voltage into the transformers) and the time coordination between the electrode channels. This information can be exchanged via an SPI protocol, with the RedPitaya FPGA computer used in the Ritmos sorter to trigger each electrode pulse. Alternatively, these settings can be fixed by Wi-Fi or USB connections, and the response can be evoked through simple triggers that potentially come from other devices.</p>
-        <p><img alt="Final Setup" src="images/final_setup.jpeg" title="Final Setup" /></p>
-        <div class="info-block">
-            <p><strong>Note:</strong> This system builds upon resources from:</p>
-            <p>1.- <a href="https://www.science.org/doi/10.1126/sciadv.aba6712#supplementary-materials" target="_blank">SADA SYSTEM</a> <em>A. ISOZAKI et al. "Sequentially addressable dielectrophoretic array for high-throughput sorting of large-volume biological compartments" SCIENCE ADVANCES (2020)</em></p>
-            <p>2.- <a href="images/IJIRSTV1I7111.pdf">Unipolar and Bipolar PWM Inverter</a> <em>HARSHAL S. WANI et al. "Unipolar and Bipolar PWM Inverter", –International Journal for Innovative Research in Science & Technology (2014)</em></p>
-        </div>
-    </div>
-</div>
-<footer class="site-footer">
-    <div class="wrapper">
-        <a target="_blank" rel="noopener noreferrer" href="https://gitbuilding.io">
-            <img class="icon" src="./static/Logo/GitBuilding500x.png" alt="GitBuilding logo">
-            <span class="doc-info">Documentation powered by GitBuilding</span>
-        </a>
-        <p class="author">©2024 Francisco Martínez and Tobías Wenzel</p>
-        <p class="email">Contact: <a href="mailto:librehub@uc.cl">librehub@uc.cl</a></p>
-        <p class="license">Multi Channel High Voltage Pulse Generator Board is released under <a href="license.html">MIT</a>.</p>
-    </div>
-</footer>
+    <header>
+        <h1>Bienvenido a la Documentación</h1>
+    </header>
+    <main>
+        <p>Esta es la página principal de la documentación.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tu Nombre o Empresa</p>
+    </footer>
 </body>
 </html>
