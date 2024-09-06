@@ -1,0 +1,38 @@
+title: Multi Channel High Voltage Pulse Generator Board
+description: Documentation for the high voltage pulse generator board
+theme: jekyll-theme-cayman
+
+# Navigation configuration
+navigation:
+  - title: "Full bridge single-phase inverter"
+    link: /testpage1
+    sub_navigation:
+      - title: "Schematic of Circuit"
+        link: /Schematic
+      - title: "Layout of Circuit"
+        link: /Layout
+      - title: "Assembly PCB"
+        link: /Datasheet
+  - title: "Control PCB"
+    link: /testpage5
+    sub_navigation:
+      - title: "General Schematic"
+        link: /schematic2
+      - title: "HVPG Assembly"
+        link: /assembly2
+  - title: "Code C++"
+    link: /widget
+    sub_navigation:
+      - title: "Digital Potentiometer"
+        link: /potentiometer
+      - title: "PWM signals"
+        link: /pwm
+  - title: "User Interface"
+    link: /user_interface
+    sub_navigation:
+      - title: "Python Code"
+        link: /python
+      - title: "Master ESP32"
+        link: /master
+      - title: "Slave ESP32"
+        link: /slave
