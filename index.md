@@ -5,6 +5,24 @@ This is our open-source hardware and custom electronics solution for microfluidi
 
 ![](images/final_setup.jpeg)
 
+To explore the documentation, please use the links below:
+
+- [Full bridge single-phase inverter](testpage1.md)
+  - [Schematic of Circuit](Schematic.md)
+  - [Layout of Circuit](Layout.md)
+  - [Assembly PCB](Datasheet.md)
+- [Control PCB](testpage5.md)
+  - [General Schematic](schematic2.md)
+  - [HVPG Assembly](assembly2.md)
+- [Code C++](widget.md)
+  - [Digital Potentiometer](potentiometer.md)
+  - [PWM signals](pwm.md)
+- [User Interface](user_interface.md)
+  - [Python Code](python.md)
+  - [Master ESP32](master.md)
+  - [Slave ESP32](slave.md)
+
+## References
 
 >i **Note:** This system builds upon resources from:
 >i 
