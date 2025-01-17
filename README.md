@@ -1,5 +1,9 @@
 # This project is documented with GitBuilding
 
+## Access the Documentation
+
+The updated [documentation for this project can be accessed directly here](https://fcomc7.github.io/high-voltage-pulse-generator/).
+
 ## What is GitBuilding
 
 GitBuilding is an OpenSource project for documenting hardware projects with minimal
@@ -19,7 +23,3 @@ notice that the files you are editing are markdown files. GitBuilding uses an ex
 markdown syntax (that we call BuildUp). This allows you to keep track of parts in the
 documentation. More detailed documentation is available on the
 [GitBuilding website](https://gitbuilding.io).
-
-## Access the Documentation
-
-The updated documentation for this project can be accessed directly [here](https://fcomc7.github.io/high-voltage-pulse-generator/).
