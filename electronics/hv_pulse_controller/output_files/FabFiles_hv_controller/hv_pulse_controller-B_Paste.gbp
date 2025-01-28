@@ -1,0 +1,19 @@
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,8.0.3-8.0.3-0~ubuntu20.04.1*
+G04 #@! TF.CreationDate,2025-01-28T06:04:02-03:00*
+G04 #@! TF.ProjectId,hv_pulse_controller,68765f70-756c-4736-955f-636f6e74726f,rev?*
+G04 #@! TF.SameCoordinates,Original*
+G04 #@! TF.FileFunction,Paste,Bot*
+G04 #@! TF.FilePolarity,Positive*
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 8.0.3-8.0.3-0~ubuntu20.04.1) date 2025-01-28 06:04:02*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10O,2.000000X4.000000*%
+G04 APERTURE END LIST*
+D10*
+X118050000Y-69200000D03*
+X107900000Y-69200000D03*
+M02*
