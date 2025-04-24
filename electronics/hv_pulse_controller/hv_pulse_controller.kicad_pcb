@@ -24417,7 +24417,6 @@
 		(property "Reference" "U8"
 			(at 2.9 -3.4625 0)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "6daa72e3-a0b8-42ac-bc7e-e938cb92caa6")
 			(effects
 				(font
